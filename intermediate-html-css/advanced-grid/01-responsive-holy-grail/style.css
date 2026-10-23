@@ -9,7 +9,21 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  
+  display: grid;
+  gap: 15px;
+  grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr;
 }
+
+/* - The gap is 15px
+- The grid has two columns
+- The grid has four rows
+- The grid tracks do not use static sizes (no pixels!)
+- The second column is three times as large as the other
+- The third row is five times as large as the others
+- The columns narrow and widen as the viewport changes size
+- Row 3 gets taller to accommodate text wrapping as you narrow the viewport size  */
+
 
 .container div {
   padding: 15px;
